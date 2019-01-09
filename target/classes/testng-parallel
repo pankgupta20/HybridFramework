@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Features Suite" parallel="classes" thread-count ="2">
+  
+  <test name="Chrome">
+   <parameter name="myBrowser" value="chrome" />
+    <classes>
+      <class name="com.HybridFramework.GridTest.GridParallelTest"/>
+    </classes>
+  </test>
+  
+    <test name="firefox">
+	   <parameter name="myBrowser" value="firefox" />
+	    <classes>
+	    <class name="com.HybridFramework.GridTest.GridParallelTest"/>
+    </classes>
+
+  </test>
+</suite> 

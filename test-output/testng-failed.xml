@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [TestNG Features Suite]" parallel="classes">
+  <parameter name="myBrowser" value="firefox"/>
+  <test name="Chrome(failed)" parallel="classes">
+    <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="com.HybridFramework.GridTest.GridParallelTest">
+        <methods>
+          <include name="test_01"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.HybridFramework.GridTest.GridParallelTest -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test name="firefox(failed)" parallel="classes">
+    <parameter name="myBrowser" value="firefox"/>
+    <classes>
+      <class name="com.HybridFramework.GridTest.GridParallelTest">
+        <methods>
+          <include name="test_01"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.HybridFramework.GridTest.GridParallelTest -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+</suite> <!-- Failed suite [TestNG Features Suite] -->
